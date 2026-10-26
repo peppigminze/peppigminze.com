@@ -7,10 +7,9 @@ import Projects from './components/Projects';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Cursor from './components/Cursor';
 import { loadRepoData } from './lib/data';
 import { initSmoothScroll, ScrollTrigger } from './lib/scroll';
-import { isTouch, prefersReducedMotion } from './lib/motion';
+import { prefersReducedMotion } from './lib/motion';
 import { useKonami } from './lib/useKonami';
 import type { Project, RepoData } from './types';
 
@@ -98,7 +97,6 @@ export default function App() {
       <div className="atmo atmo-noise" aria-hidden="true" />
 
       {!booted && <BootIntro repoCount={data?.projects.length ?? null} onDone={finishBoot} />}
-      {!reduced && !isTouch() && <Cursor />}
 
       <Nav onLogoEgg={triggerEgg} />
 

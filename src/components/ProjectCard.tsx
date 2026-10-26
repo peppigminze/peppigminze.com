@@ -100,8 +100,6 @@ function ProjectCard({ project: p, featured = false, onOpen }: Props) {
           className="card-stretch"
           onClick={() => onOpen(p)}
           aria-label={`${t('card.details')}: ${p.title}`}
-          data-cursor="card"
-          data-cursor-label={t('card.details')}
         />
 
         <div className="card-preview">

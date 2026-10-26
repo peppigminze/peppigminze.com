@@ -50,13 +50,7 @@
       "type": "game"
     },
     "parcour-obby": {
-      "title": "Parcour Obby",
-      "description": {
-        "de": "Roblox-Obby. Läuft auf Roblox, nicht im Browser.",
-        "en": "Roblox obby. Runs on Roblox, not in the browser."
-      },
-      "type": "game",
-      "subdomain": false
+      "hidden": true
     },
     "Cypher": {
       "title": "Cypher",
@@ -68,9 +62,7 @@
       "subdomain": false
     },
     "Economy_peppigminze": {
-      "title": "Economy",
-      "type": "tool",
-      "subdomain": false
+      "hidden": true
     },
     "kronenschlacht": {
       "type": "game"

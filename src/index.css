@@ -61,14 +61,6 @@ body {
   color: var(--void);
 }
 
-/* Custom Cursor aktiv → nativen Cursor ausblenden (nur feine Zeiger) */
-@media (pointer: fine) {
-  html.has-cursor,
-  html.has-cursor * {
-    cursor: none !important;
-  }
-}
-
 /* ============================================================
    Atmosphäre: Grid, Scanlines, Noise (fixiert, sehr dezent)
    ============================================================ */
@@ -663,87 +655,6 @@ body {
   background: var(--mint);
   vertical-align: -0.15em;
   animation: blink 0.9s steps(2, start) infinite;
-}
-
-/* ============================================================
-   Custom Cursor
-   ============================================================ */
-.cursor-layer {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 120;
-}
-.cursor-dot,
-.cursor-ring {
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: 121;
-  will-change: transform;
-}
-.cursor-dot {
-  width: 6px;
-  height: 6px;
-  margin: -3px 0 0 -3px;
-  border-radius: 50%;
-  background: var(--mint);
-  box-shadow: 0 0 10px var(--mint);
-}
-.cursor-ring {
-  width: 34px;
-  height: 34px;
-  margin: -17px 0 0 -17px;
-  border-radius: 50%;
-  border: 1px solid rgba(61, 255, 181, 0.55);
-  display: grid;
-  place-items: center;
-  transition: width 0.35s var(--ease-out), height 0.35s var(--ease-out), margin 0.35s var(--ease-out),
-    border-radius 0.35s var(--ease-out), background 0.3s, border-color 0.3s;
-}
-.cursor-ring .cursor-label {
-  font-family: 'JetBrains Mono Variable', ui-monospace, monospace;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  color: #02150d;
-  opacity: 0;
-  transform: scale(0.6);
-  transition: opacity 0.2s, transform 0.3s var(--ease-out);
-}
-.cursor-ring.is-link {
-  width: 52px;
-  height: 52px;
-  margin: -26px 0 0 -26px;
-  background: rgba(61, 255, 181, 0.08);
-  border-color: var(--mint);
-}
-.cursor-ring.is-card {
-  width: 74px;
-  height: 74px;
-  margin: -37px 0 0 -37px;
-  background: var(--mint);
-  border-color: var(--mint);
-  box-shadow: 0 0 30px -4px var(--mint);
-}
-.cursor-ring.is-card .cursor-label {
-  opacity: 1;
-  transform: none;
-}
-.cursor-ring.is-text {
-  width: 3px;
-  height: 26px;
-  margin: -13px 0 0 -1.5px;
-  border-radius: 2px;
-  background: var(--mint);
-}
-.cursor-ring.is-down {
-  transform-origin: center;
-}
-.cursor-hidden .cursor-dot,
-.cursor-hidden .cursor-ring {
-  opacity: 0;
 }
 
 /* ============================================================
