@@ -1,0 +1,70 @@
+# Baut die Hub-Seite und deployt sie auf GitHub Pages.
+# Läuft bei jedem Push auf main, alle 6 Stunden (Repo-Daten auffrischen) und manuell.
+# Der Token wird NUR hier serverseitig benutzt und landet nie im Frontend.
+name: Update & Deploy
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '17 */6 * * *' # alle 6 h (leicht versetzt, um Lastspitzen zu meiden)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Repo-Daten holen (GitHub API + Live-Check)
+        env:
+          # Eigenes Secret GH_TOKEN, falls gesetzt – sonst der automatische Actions-Token (reicht für öffentliche Repos).
+          GH_TOKEN: ${{ secrets.GH_TOKEN || github.token }}
+        run: node scripts/fetch-repos.mjs
+
+      - name: Playwright installieren (Screenshots)
+        run: npx playwright install --with-deps chromium
+
+      - name: Screenshots der Live-Projekte
+        run: node scripts/screenshots.mjs
+        continue-on-error: true
+
+      - name: Build
+        run: npm run build
+
+      - name: SPA-Fallback + CNAME prüfen
+        run: |
+          cp dist/index.html dist/404.html
+          test -f dist/CNAME && cat dist/CNAME
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
