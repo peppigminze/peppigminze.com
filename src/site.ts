@@ -5,7 +5,7 @@ export const SITE = {
   github: 'https://github.com/peppigminze',
   githubUser: 'peppigminze',
   // ANNAHME: Adresse muss ggf. noch eingerichtet werden (z. B. Cloudflare Email Routing).
-  email: 'hallo@peppigminze.com',
+  email: 'kontakt@peppigminze.com',
   socials: [
     { label: 'GitHub', href: 'https://github.com/peppigminze', handle: '@peppigminze' },
   ] as { label: string; href: string; handle: string }[],
