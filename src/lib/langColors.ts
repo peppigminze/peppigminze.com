@@ -1,0 +1,26 @@
+/** GitHub-Linguist-Farben der gängigsten Sprachen. */
+export const LANG_COLORS: Record<string, string> = {
+  JavaScript: '#f1e05a',
+  TypeScript: '#3178c6',
+  HTML: '#e34c26',
+  CSS: '#663399',
+  Python: '#3572A5',
+  Kotlin: '#A97BFF',
+  Java: '#b07219',
+  Lua: '#000080',
+  Luau: '#00A2FF',
+  'C#': '#178600',
+  'C++': '#f34b7d',
+  C: '#555555',
+  Go: '#00ADD8',
+  Rust: '#dea584',
+  Shell: '#89e051',
+  PowerShell: '#012456',
+  Dockerfile: '#384d54',
+  HCL: '#844FBA',
+  SCSS: '#c6538c',
+  Vue: '#41b883',
+  Svelte: '#ff3e00',
+  GDScript: '#355570',
+};
+export const langColor = (l: string | null) => (l && LANG_COLORS[l]) || '#8AA39A';

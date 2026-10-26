@@ -1,0 +1,360 @@
+{
+  "generatedAt": "2026-10-26T13:57:10.060Z",
+  "source": "build",
+  "user": "peppigminze",
+  "stats": {
+    "repos": 12,
+    "commits": 143,
+    "stars": 0,
+    "languages": 9
+  },
+  "projects": [
+    {
+      "name": "RotationPro",
+      "title": "RotationPro",
+      "description": {
+        "de": "Volleyball-Team-App: Rotationen, Regel-Engine, Quiz- und Lernmodus, Taktikboard und ein Match-Stress-Minigame.",
+        "en": "Volleyball team app: rotations, rule engine, quiz and learning modes, tactics board and a match-stress minigame."
+      },
+      "type": "app",
+      "url": "https://peppigminze.github.io/RotationPro/",
+      "repoUrl": "https://github.com/peppigminze/RotationPro",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 245272,
+        "CSS": 27674,
+        "HTML": 1435
+      },
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-10-22T13:22:01Z",
+      "createdAt": "2026-10-22T12:21:57Z",
+      "archived": false,
+      "status": "live",
+      "featured": true,
+      "order": 1,
+      "preview": "/previews/rotationpro.webp",
+      "readme": "Volleyball-Aufstellungen planen, Rotationen verstehen und die eigene Position trainieren – als installierbare, offline-fähige PWA (Deutsch/Englisch).",
+      "commits": 6
+    },
+    {
+      "name": "loopstorm",
+      "title": "LOOPSTORM",
+      "description": {
+        "de": "Du bist ein Komet. Dein Schweif ist deine Waffe: Kreuze ihn, und alles in der Schleife explodiert.",
+        "en": "Du bist ein Komet. Dein Schweif ist deine Waffe: Kreuze ihn, und alles in der Schleife explodiert."
+      },
+      "type": "game",
+      "url": "https://peppigminze.github.io/loopstorm/",
+      "repoUrl": "https://github.com/peppigminze/loopstorm",
+      "language": "HTML",
+      "languages": {
+        "HTML": 197564,
+        "JavaScript": 174057,
+        "CSS": 14150,
+        "Python": 7467
+      },
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-10-22T09:31:48Z",
+      "createdAt": "2026-10-22T07:31:06Z",
+      "archived": false,
+      "status": "live",
+      "featured": false,
+      "order": 4,
+      "preview": "/previews/loopstorm.webp",
+      "readme": "Du bist ein Komet. Dein Schweif ist deine Waffe: Kreuze ihn, und alles in der Schleife explodiert. Browser-Action-Roguelite mit kurzen Runs (1–3 Min), 6 Sektoren × 3 Intensitäten, 3 Klassen, Talentbaum, Loot in 5 Seltenheiten, Synergien, Bossen, Missionen und Overdrive-Risiko. • dist/index.html ist eine einzige, selbständige Datei (kein Server, keine externen Dateien). Doppelklick genügt. • Steuerung: WASD/Pfeile oder Ziehen auf dem Bildschirm · Leertaste/Shift/Knopf/zweiter Finger = Spezial · Esc/P = Pause · 1–4 = Upgrade wählen · Enter = Start / Noch ein Run.",
+      "commits": 1
+    },
+    {
+      "name": "lampenfieber",
+      "title": "Lampenfieber",
+      "description": {
+        "de": "Ein Schattentheater in fünf Akten. Top-down-Action-Roguelite für den Browser, ohne Framework, ohne Server, ohne externe Dateien.",
+        "en": "Ein Schattentheater in fünf Akten. Top-down-Action-Roguelite für den Browser, ohne Framework, ohne Server, ohne externe Dateien."
+      },
+      "type": "game",
+      "url": "https://peppigminze.github.io/lampenfieber/",
+      "repoUrl": "https://github.com/peppigminze/lampenfieber",
+      "language": "HTML",
+      "languages": {
+        "HTML": 191255,
+        "JavaScript": 176794,
+        "CSS": 15233,
+        "Python": 8704,
+        "Shell": 462
+      },
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-10-22T06:25:21Z",
+      "createdAt": "2026-10-21T14:14:03Z",
+      "archived": false,
+      "status": "live",
+      "featured": false,
+      "order": 999,
+      "preview": "/previews/lampenfieber.webp",
+      "readme": "Spielen: https://peppigminze.github.io/ueberraschungzwei/\n\nindex.html im Root ist die gebündelte Single-File-Version. Der Quellcode liegt in src/ (dort node tools/bundle.mjs ausführen, Ergebnis in src/dist/index.html).\n\nEin Schattentheater in fünf Akten. Top-down-Action-Roguelite für den Browser, ohne Framework, ohne Server, ohne externe Dateien.",
+      "commits": 1
+    },
+    {
+      "name": "stillewasser",
+      "title": "stillewasser",
+      "description": {
+        "de": "Hüte den Mond. Wo Wellen sich treffen, entsteht Kraft.",
+        "en": "Hüte den Mond. Wo Wellen sich treffen, entsteht Kraft."
+      },
+      "type": "game",
+      "url": "https://peppigminze.github.io/stillewasser/",
+      "repoUrl": "https://github.com/peppigminze/stillewasser",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 244157,
+        "CSS": 21662,
+        "HTML": 2722
+      },
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-10-21T13:39:08Z",
+      "createdAt": "2026-10-21T12:05:39Z",
+      "archived": false,
+      "status": "live",
+      "featured": false,
+      "order": 999,
+      "preview": "/previews/stillewasser.webp",
+      "readme": "Hüte den Mond. Wo Wellen sich treffen, entsteht Kraft.\n\nEin rundenbasiertes Taktik-Roguelite für den Browser. Du greifst nie direkt an: Du wirfst Steine in einen nächtlichen Teich, und Schaden entsteht nur dort, wo sich ihre Wellen überlagern.\n\nSpielen: https://peppigminze.github.io/ueberaschungsprojekt/ (GitHub Pages muss einmalig aktiviert sein, siehe unten.)\n\nLäuft auf Handy (hoch- und querformat) und Desktop, mit Touch, Maus oder Tastatur. Keine Installation, keine externen Dateien, keine Anmeldung. Der Fortschritt wird im Browser gespeichert.",
+      "commits": 10
+    },
+    {
+      "name": "Cypher",
+      "title": "Cypher",
+      "description": {
+        "de": "Persönlicher Assistent im JARVIS-Stil, Schritt für Schritt aufgebaut.",
+        "en": "A JARVIS-style personal assistant, built step by step."
+      },
+      "type": "tool",
+      "url": null,
+      "repoUrl": "https://github.com/peppigminze/Cypher",
+      "language": "Python",
+      "languages": {
+        "Python": 1194966,
+        "TypeScript": 250023,
+        "CSS": 41253,
+        "HTML": 11471,
+        "PowerShell": 11045,
+        "JavaScript": 1269,
+        "Batchfile": 1069
+      },
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-10-20T19:44:41Z",
+      "createdAt": "2026-09-10T16:53:08Z",
+      "archived": false,
+      "status": "building",
+      "featured": false,
+      "order": 999,
+      "preview": null,
+      "readme": "Ein Sprachassistent im Stil von JARVIS für deinen Windows-PC. Du sagst „Hey Cypher, wie spät ist es?“ und bekommst nach rund 2 Sekunden eine gesprochene Antwort. Alles läuft lokal: Das Sprachmodell rechnet in Ollama auf deiner Grafikkarte, Spracherkennung (Whisper) und Stimme (Piper) laufen auf der CPU. Die Cloud ist optional und wird nie automatisch benutzt.\n\nWie das im Detail zusammenspielt: docs/ARCHITECTURE.md.",
+      "commits": 52
+    },
+    {
+      "name": "mirrorfall",
+      "title": "mirrorfall",
+      "description": {
+        "de": "Ein Zeitschleifen-Heist im Browser. Du hast 30 Sekunden. Dann spult die Zeit zurück — und jeder frühere Durchlauf läuft als Geist weiter.",
+        "en": "Ein Zeitschleifen-Heist im Browser. Du hast 30 Sekunden. Dann spult die Zeit zurück — und jeder frühere Durchlauf läuft als Geist weiter."
+      },
+      "type": "game",
+      "url": "https://peppigminze.github.io/mirrorfall/",
+      "repoUrl": "https://github.com/peppigminze/mirrorfall",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 393439,
+        "CSS": 14857,
+        "HTML": 1081
+      },
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-10-07T19:04:01Z",
+      "createdAt": "2026-10-06T14:03:46Z",
+      "archived": false,
+      "status": "live",
+      "featured": false,
+      "order": 999,
+      "preview": "/previews/mirrorfall.webp",
+      "readme": "Ein Zeitschleifen-Heist im Browser. Du hast 30 Sekunden. Dann spult die Zeit zurück — und jeder frühere Durchlauf läuft als Geist weiter. Halte mit deinem Vergangenheits-Ich Druckplatten, lenke Wachen mit Münzen ab, öffne zu zweit den Duo-Tresor. Aber Vorsicht: Änderst du, was ein Geist erlebt hat, entsteht ein Zeitparadox und die Zeitlinie bricht ab diesem Geist. • 12 handgebaute Level (Lernkurve ohne Text-Tutorial, Level 9–12 mit Paradox-Fallen) • Tagesrätsel: Raum aus dem Datum, Lösbarkeit vor dem Spielen vom Solver-Bot bewiesen • Replays als kurzer Code (nur Eingaben, 43–135 Zeichen) + Ghost-Rennen gegen fremde Lösungen • Level-Editor mit",
+      "commits": 14
+    },
+    {
+      "name": "gainforge",
+      "title": "GAINFORGE",
+      "description": {
+        "de": "Fitness-Dashboard mit Muskelkarte, PR-Tracking und Trainingsplänen.",
+        "en": "Fitness dashboard with a muscle map, PR tracking and training plans."
+      },
+      "type": "app",
+      "url": "https://peppigminze.github.io/gainforge/",
+      "repoUrl": "https://github.com/peppigminze/gainforge",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 224809,
+        "CSS": 40546,
+        "HTML": 7267
+      },
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-09-24T11:57:41Z",
+      "createdAt": "2026-09-04T15:30:48Z",
+      "archived": false,
+      "status": "live",
+      "featured": true,
+      "order": 3,
+      "preview": "/previews/gainforge.webp",
+      "readme": "Persönliches Life-Dashboard im HUD/Terminal-Look. Installierbar als PWA, Login und Daten über Firebase (funktioniert auch offline). • Die App heisst jetzt GAINFORGE und hat ein neues Icon (icons/icon.svg als Quelle, PNGs in 180/192/512, maskable, Favicon). • Repo heisst gainforge, die App läuft unter https://peppigminze.github.io/gainforge/. • Unverändert (absichtlich): Firebase-Projekt silvanos-1e7a0, alte silvanos-Speicherschlüssel für die Migration. window.SILVAN funktioniert weiter als Alias von window.GAINFORGE. • Blase unten rechts ist für Cypher reserviert (inaktiv). Verbindet sich Cypher über GAINFORGE.cypher.attach(handler), wird sie",
+      "commits": 23
+    },
+    {
+      "name": "blackout",
+      "title": "BLACKOUT",
+      "description": {
+        "de": "Schnelles Action-Game mit Leaderboard, Sounddesign und PWA-Support.",
+        "en": "Fast action game with a leaderboard, sound design and PWA support."
+      },
+      "type": "game",
+      "url": "https://peppigminze.github.io/blackout/",
+      "repoUrl": "https://github.com/peppigminze/blackout",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 119680,
+        "CSS": 11748,
+        "HTML": 8946
+      },
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-09-23T14:23:30Z",
+      "createdAt": "2026-09-04T12:03:25Z",
+      "archived": false,
+      "status": "live",
+      "featured": true,
+      "order": 2,
+      "preview": "/previews/blackout.webp",
+      "readme": null,
+      "commits": 32
+    },
+    {
+      "name": "parcour-obby",
+      "title": "Parcour Obby",
+      "description": {
+        "de": "Roblox-Obby. Läuft auf Roblox, nicht im Browser.",
+        "en": "Roblox obby. Runs on Roblox, not in the browser."
+      },
+      "type": "game",
+      "url": null,
+      "repoUrl": "https://github.com/peppigminze/parcour-obby",
+      "language": null,
+      "languages": {},
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-09-16T12:16:51Z",
+      "createdAt": "2026-09-16T12:16:50Z",
+      "archived": false,
+      "status": "building",
+      "featured": false,
+      "order": 999,
+      "preview": null,
+      "readme": null,
+      "commits": 0
+    },
+    {
+      "name": "kronenschlacht",
+      "title": "kronenschlacht",
+      "description": {
+        "de": "Ein Clash-Royale-artiges Echtzeit-Kartenduell (Singleplayer vs. KI), gebaut als PWA in reinem HTML/CSS/JS — keine externen Assets, keine Frameworks, keine Abhängigkeiten.",
+        "en": "Ein Clash-Royale-artiges Echtzeit-Kartenduell (Singleplayer vs. KI), gebaut als PWA in reinem HTML/CSS/JS — keine externen Assets, keine Frameworks, keine Abhängigkeiten."
+      },
+      "type": "game",
+      "url": "https://peppigminze.github.io/kronenschlacht/",
+      "repoUrl": "https://github.com/peppigminze/kronenschlacht",
+      "language": "JavaScript",
+      "languages": {
+        "JavaScript": 39317,
+        "HTML": 11279
+      },
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-09-07T12:27:56Z",
+      "createdAt": "2026-09-07T12:27:04Z",
+      "archived": false,
+      "status": "live",
+      "featured": false,
+      "order": 999,
+      "preview": "/previews/kronenschlacht.webp",
+      "readme": "Ein Clash-Royale-artiges Echtzeit-Kartenduell (Singleplayer vs. KI), gebaut als PWA in reinem HTML/CSS/JS — keine externen Assets, keine Frameworks, keine Abhängigkeiten. Läuft komplett offline nach dem ersten Laden.",
+      "commits": 1
+    },
+    {
+      "name": "nachtschicht",
+      "title": "nachtschicht",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "type": "game",
+      "url": "https://peppigminze.github.io/nachtschicht/",
+      "repoUrl": "https://github.com/peppigminze/nachtschicht",
+      "language": "HTML",
+      "languages": {
+        "HTML": 23195,
+        "JavaScript": 706
+      },
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2026-09-04T10:55:43Z",
+      "createdAt": "2026-09-04T10:33:42Z",
+      "archived": false,
+      "status": "live",
+      "featured": false,
+      "order": 999,
+      "preview": "/previews/nachtschicht.webp",
+      "readme": null,
+      "commits": 2
+    },
+    {
+      "name": "Economy_peppigminze",
+      "title": "Economy",
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "type": "tool",
+      "url": null,
+      "repoUrl": "https://github.com/peppigminze/Economy_peppigminze",
+      "language": "Kotlin",
+      "languages": {
+        "Kotlin": 8966
+      },
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "updatedAt": "2025-12-14T11:51:37Z",
+      "createdAt": "2025-12-14T11:46:49Z",
+      "archived": false,
+      "status": "building",
+      "featured": false,
+      "order": 999,
+      "preview": null,
+      "readme": null,
+      "commits": 1
+    }
+  ]
+}

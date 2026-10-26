@@ -1,0 +1,92 @@
+{
+  "_hinweis": "Overrides für einzelne Karten. Schlüssel = exakter Repo-Name. Alle Felder optional. Siehe README → 'Karten anpassen'.",
+  "settings": {
+    "user": "peppigminze",
+    "domain": "peppigminze.com",
+    "excludeForks": true,
+    "exclude": [
+      "peppigminze.com"
+    ]
+  },
+  "projects": {
+    "RotationPro": {
+      "title": "RotationPro",
+      "description": {
+        "de": "Volleyball-Team-App: Rotationen, Regel-Engine, Quiz- und Lernmodus, Taktikboard und ein Match-Stress-Minigame.",
+        "en": "Volleyball team app: rotations, rule engine, quiz and learning modes, tactics board and a match-stress minigame."
+      },
+      "type": "app",
+      "featured": true,
+      "order": 1,
+      "subdomain": "rotationpro"
+    },
+    "blackout": {
+      "title": "BLACKOUT",
+      "description": {
+        "de": "Schnelles Action-Game mit Leaderboard, Sounddesign und PWA-Support.",
+        "en": "Fast action game with a leaderboard, sound design and PWA support."
+      },
+      "type": "game",
+      "featured": true,
+      "order": 2
+    },
+    "gainforge": {
+      "title": "GAINFORGE",
+      "description": {
+        "de": "Fitness-Dashboard mit Muskelkarte, PR-Tracking und Trainingsplänen.",
+        "en": "Fitness dashboard with a muscle map, PR tracking and training plans."
+      },
+      "type": "app",
+      "featured": true,
+      "order": 3
+    },
+    "loopstorm": {
+      "title": "LOOPSTORM",
+      "type": "game",
+      "order": 4
+    },
+    "lampenfieber": {
+      "title": "Lampenfieber",
+      "type": "game"
+    },
+    "parcour-obby": {
+      "title": "Parcour Obby",
+      "description": {
+        "de": "Roblox-Obby. Läuft auf Roblox, nicht im Browser.",
+        "en": "Roblox obby. Runs on Roblox, not in the browser."
+      },
+      "type": "game",
+      "subdomain": false
+    },
+    "Cypher": {
+      "title": "Cypher",
+      "description": {
+        "de": "Persönlicher Assistent im JARVIS-Stil, Schritt für Schritt aufgebaut.",
+        "en": "A JARVIS-style personal assistant, built step by step."
+      },
+      "type": "tool",
+      "subdomain": false
+    },
+    "Economy_peppigminze": {
+      "title": "Economy",
+      "type": "tool",
+      "subdomain": false
+    },
+    "kronenschlacht": {
+      "type": "game"
+    },
+    "mirrorfall": {
+      "type": "game"
+    },
+    "nachtschicht": {
+      "type": "game"
+    },
+    "stillewasser": {
+      "type": "game"
+    },
+    "beispiel-verstecktes-repo": {
+      "_hinweis": "So blendest du ein Repo komplett aus:",
+      "hidden": true
+    }
+  }
+}
