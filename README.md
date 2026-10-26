@@ -87,6 +87,10 @@ Nach einer Änderung: committen und pushen. Die Action baut neu.
 
 ## Deployment (GitHub Pages)
 
+### 0. Workflow-Datei
+
+Falls `.github/workflows/update.yml` noch fehlt: siehe [`setup/README.md`](setup/README.md). GitHub verlangt fürs Pushen von Workflows eine extra Token-Berechtigung.
+
 ### 1. Pages aktivieren
 
 **Settings → Pages → Source: „GitHub Actions“**, dann bei Custom domain `peppigminze.com` eintragen.
