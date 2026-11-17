@@ -764,17 +764,26 @@ body {
 .bento { grid-template-columns: 1fr; }
 .bento-item { min-height: 0; }
 @media (min-width: 768px) {
-  .bento-2 { grid-template-columns: 1fr 1fr; }
-  .bento-3 { grid-template-columns: 1fr 1fr; }
-  .bento-3 .bento-0 { grid-column: 1 / -1; }
+  .bento-c2, .bento-c3, .bento-c4, .bento-c5 { grid-template-columns: 1fr 1fr; }
+  .bento-c3 .bento-0, .bento-c5 .bento-0 { grid-column: 1 / -1; }
 }
 @media (min-width: 1024px) {
-  .bento-1 .card-inner { min-height: 460px; }
-  .bento-3 { grid-template-columns: 7fr 5fr; grid-template-rows: auto auto; }
-  .bento-3 .bento-0 { grid-column: 1; grid-row: 1 / span 2; }
-  .bento-3 .bento-1 { grid-column: 2; grid-row: 1; }
-  .bento-3 .bento-2 { grid-column: 2; grid-row: 2; }
-  .bento-3 .bento-0 .card-inner { min-height: 640px; }
-  .bento-3 .bento-1 .card-preview,
-  .bento-3 .bento-2 .card-preview { min-height: 170px; }
+  .bento-c1 .card-inner { min-height: 460px; }
+  .bento-c3 { grid-template-columns: 7fr 5fr; grid-template-rows: auto auto; }
+  .bento-c3 .bento-0 { grid-column: 1; grid-row: 1 / span 2; }
+  .bento-c3 .bento-1 { grid-column: 2; grid-row: 1; }
+  .bento-c3 .bento-2 { grid-column: 2; grid-row: 2; }
+  .bento-c3 .bento-0 .card-inner { min-height: 640px; }
+  .bento-c3 .bento-1 .card-preview,
+  .bento-c3 .bento-2 .card-preview { min-height: 170px; }
+  /* 5 Featured: oben gross (7/5), darunter drei gleich breite Karten */
+  .bento-c5 { grid-template-columns: repeat(12, 1fr); }
+  .bento-c5 .bento-0 { grid-column: span 7; }
+  .bento-c5 .bento-1 { grid-column: span 5; }
+  .bento-c5 .bento-2, .bento-c5 .bento-3, .bento-c5 .bento-4 { grid-column: span 4; }
+  .bento-c5 .bento-0 .card-inner { min-height: 420px; }
+  .bento-c5 .bento-1 .card-preview,
+  .bento-c5 .bento-2 .card-preview,
+  .bento-c5 .bento-3 .card-preview,
+  .bento-c5 .bento-4 .card-preview { min-height: 170px; }
 }

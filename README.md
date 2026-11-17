@@ -71,7 +71,7 @@ Schlüssel ist der **exakte Repo-Name**. Alle Felder sind optional.
 | `title` | `"BLACKOUT"` | Anzeigename |
 | `description` | `"Text"` oder `{ "de": "…", "en": "…" }` | überschreibt GitHub-Beschreibung (sonst: GitHub → README-Anfang) |
 | `type` | `"game"` / `"app"` / `"tool"` | Filter-Kategorie (sonst aus Topics: `game`, `tool`, `bot`…) |
-| `featured` | `true` | große Bento-Karte oben (max. 3, sortiert nach `order`) |
+| `featured` | `true` | große Bento-Karte oben (max. 5, sortiert nach `order`) |
 | `order` | `1` | Reihenfolge der Featured-Karten |
 | `subdomain` | `"rotationpro"` oder `false` | eigene Subdomain; `false` = kein Web-Build (zeigt „Code ansehen“) |
 | `url` | `"https://…"` | feste Live-URL, überschreibt alles |

@@ -16,8 +16,6 @@
         "en": "Volleyball team app: rotations, rule engine, quiz and learning modes, tactics board and a match-stress minigame."
       },
       "type": "app",
-      "featured": true,
-      "order": 1,
       "subdomain": "rotationpro"
     },
     "blackout": {
@@ -28,7 +26,7 @@
       },
       "type": "game",
       "featured": true,
-      "order": 2
+      "order": 3
     },
     "gainforge": {
       "title": "GAINFORGE",
@@ -38,12 +36,11 @@
       },
       "type": "app",
       "featured": true,
-      "order": 3
+      "order": 5
     },
     "loopstorm": {
       "title": "LOOPSTORM",
-      "type": "game",
-      "order": 4
+      "type": "game"
     },
     "lampenfieber": {
       "title": "Lampenfieber",
@@ -59,7 +56,9 @@
         "en": "A JARVIS-style personal assistant, built step by step."
       },
       "type": "tool",
-      "subdomain": false
+      "subdomain": false,
+      "featured": true,
+      "order": 4
     },
     "Economy_peppigminze": {
       "hidden": true
@@ -68,7 +67,9 @@
       "type": "game"
     },
     "mirrorfall": {
-      "type": "game"
+      "type": "game",
+      "featured": true,
+      "order": 2
     },
     "nachtschicht": {
       "type": "game"
@@ -79,6 +80,12 @@
     "beispiel-verstecktes-repo": {
       "_hinweis": "So blendest du ein Repo komplett aus:",
       "hidden": true
+    },
+    "railbreaker": {
+      "featured": true,
+      "order": 1,
+      "title": "RAILBREAKER",
+      "type": "game"
     }
   }
 }

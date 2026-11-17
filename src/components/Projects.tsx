@@ -87,7 +87,7 @@ export default function Projects({ data, error, onOpen }: { data: RepoData | nul
 
   // Featured nur in der Standardansicht als Bento oben; sonst alle im normalen Grid
   const bentoMode = filter === 'all' && !query && sort === 'featured';
-  const featured = bentoMode ? list.filter((p) => p.featured).sort((a, b) => a.order - b.order).slice(0, 3) : [];
+  const featured = bentoMode ? list.filter((p) => p.featured).sort((a, b) => a.order - b.order).slice(0, 5) : [];
   const rest = bentoMode ? list.filter((p) => !featured.includes(p)) : list;
 
   // Überschrift: Zeilen-Reveal beim Scrollen
@@ -192,7 +192,7 @@ export default function Projects({ data, error, onOpen }: { data: RepoData | nul
 
       <div ref={gridRef}>
         {featured.length > 0 && (
-          <div className={`bento mb-4 grid gap-4 ${featured.length === 1 ? 'bento-1' : featured.length === 2 ? 'bento-2' : 'bento-3'}`}>
+          <div className={`bento mb-4 grid gap-4 bento-c${featured.length}`}>
             {featured.map((p, i) => (
               <div key={p.name} className={`bento-item bento-${i}`}>
                 <ProjectCard project={p} featured onOpen={onOpen} />
