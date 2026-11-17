@@ -7,7 +7,7 @@ import ProjectCard from './ProjectCard';
 import { SearchIcon } from './Icons';
 
 type Filter = 'all' | ProjectType;
-type Sort = 'recent' | 'stars' | 'az';
+type Sort = 'featured' | 'recent' | 'stars' | 'az';
 
 /** Segmented Control mit gleitendem "Thumb". */
 function Segmented({ value, onChange, counts }: { value: Filter; onChange: (f: Filter) => void; counts: Record<Filter, number> }) {
@@ -54,7 +54,7 @@ export default function Projects({ data, error, onOpen }: { data: RepoData | nul
   const { t, lang } = useI18n();
   const [filter, setFilter] = useState<Filter>('all');
   const [query, setQuery] = useState('');
-  const [sort, setSort] = useState<Sort>('recent');
+  const [sort, setSort] = useState<Sort>('featured');
   const gridRef = useRef<HTMLDivElement>(null);
   const headRef = useRef<HTMLDivElement>(null);
 
@@ -64,6 +64,8 @@ export default function Projects({ data, error, onOpen }: { data: RepoData | nul
     all.forEach((p) => c[p.type]++);
     return c;
   }, [all]);
+
+  const hasStars = all.some((p) => p.stars > 0);
 
   const list = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -75,6 +77,7 @@ export default function Projects({ data, error, onOpen }: { data: RepoData | nul
     }
     const byDate = (a: Project, b: Project) => +new Date(b.updatedAt ?? 0) - +new Date(a.updatedAt ?? 0);
     const cmp: Record<Sort, (a: Project, b: Project) => number> = {
+      featured: byDate,
       recent: byDate,
       stars: (a, b) => b.stars - a.stars || byDate(a, b),
       az: (a, b) => a.title.localeCompare(b.title, lang),
@@ -83,7 +86,7 @@ export default function Projects({ data, error, onOpen }: { data: RepoData | nul
   }, [all, filter, query, sort, lang]);
 
   // Featured nur in der Standardansicht als Bento oben; sonst alle im normalen Grid
-  const bentoMode = filter === 'all' && !query && sort === 'recent';
+  const bentoMode = filter === 'all' && !query && sort === 'featured';
   const featured = bentoMode ? list.filter((p) => p.featured).sort((a, b) => a.order - b.order).slice(0, 3) : [];
   const rest = bentoMode ? list.filter((p) => !featured.includes(p)) : list;
 
@@ -123,7 +126,7 @@ export default function Projects({ data, error, onOpen }: { data: RepoData | nul
   const reset = () => {
     setFilter('all');
     setQuery('');
-    setSort('recent');
+    setSort('featured');
   };
 
   return (
@@ -157,8 +160,9 @@ export default function Projects({ data, error, onOpen }: { data: RepoData | nul
             <label className="field flex items-center px-3">
               <span className="sr-only">{t('sort.label')}</span>
               <select value={sort} onChange={(e) => setSort(e.target.value as Sort)} className="h-full pr-1">
+                <option value="featured">{t('sort.featured')}</option>
                 <option value="recent">{t('sort.recent')}</option>
-                <option value="stars">{t('sort.stars')}</option>
+                {hasStars && <option value="stars">{t('sort.stars')}</option>}
                 <option value="az">{t('sort.az')}</option>
               </select>
             </label>
